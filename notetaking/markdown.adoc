@@ -1,0 +1,54 @@
+= Markdown
+
+Official from Github
+https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf
+
+Others
+
+* https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+* https://support.squarespace.com/hc/en-us/articles/206543587-Markdown-cheat-sheet#toc-text-colors-and-fonts
+
+
+* [adam-p/markdown-here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+* [Table Generator](https://jakebathman.github.io/Markdown-Table-Generator/)
+  * [Atom Plugin: markdown-toc](https://atom.io/packages/markdown-toc)
+* [Github Guide (PDF)](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* https://stackoverflow.com/questions/14675913/changing-image-size-in-markdown
+
+Example Changing Image Size
+"...png =250x)"
+
+Example of TOC
+
+```markdown
+Table of Contents
+* [SSH Commands](#SSH-Commands)
+* [MAC Commands](#MAC-Commands)
+```
+
+Example of Collapsible
+## collapsible markdown?
+
+<details><summary>CLICK ME</summary>
+<p>
+
+#### yes, even hidden code blocks!
+
+```python
+print("hello world!")
+```
+
+</p>
+</details>
+
+'''
+
+== IDE Extensions
+
+* https://code.visualstudio.com/docs/languages/markdown
+
+'''
+
+== Other Integrations
+
+Example of markdown + evernote: [Using Marxico to work with Markdown in Evernote — Curtis McHale](https://curtismchale.ca/2015/09/17/using-marxico-to-work-with-markdown-in-evernote/)

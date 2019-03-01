@@ -1,0 +1,37 @@
+= AsciiDoc
+
+AsciiDoctor
+
+
+https://asciidoctor.org/docs/asciidoc-vs-markdown/#comparison-by-example
+
+
+https://marketplace.visualstudio.com/items?itemName=joaompinto.asciidoctor-vscode
+
+
+https://asciidoctor.org/docs/asciidoc-recommended-practices/
+https://asciidoctor.org/docs/asciidoc-recommended-practices/#attribute-groups
+
+
+Some Features:
+* https://asciidoctor.org/docs/user-manual/#quote
+* https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#source-code
+    * https://asciidoctor.org/docs/user-manual/#source-code-blocks
+    * (User example hosted in Github) https://gist.github.com/dcode/0cfbf2699a1fe9b46ff04c41721dda74#callouts
+* https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#bibliography
+* https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#section-footnotes
+
+
+
+
+https://asciidoctor.org/docs/install-asciidoctor-macos/
+
+
+Diagrams
+https://asciidoctor.org/docs/asciidoctor-diagram/
+https://github.com/lewish/asciiflow2
+
+
+
+
+https://leanpub.com/awesomeasciidoctornotebook/read#leanpub-auto-source-code

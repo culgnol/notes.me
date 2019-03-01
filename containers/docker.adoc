@@ -1,0 +1,37 @@
+= Docker
+
+## Common Stuff
+
+```
+// listing
+docker images // list all images
+
+docker ps -a // list all containers
+docker ps -aq -f status=exited // list all exited containers
+
+docker volume ls // list all volumes
+
+// removing
+docker images -q --filter dangling=true | xargs docker rmi // Remove dangling/untagged images
+
+docker ps -aq --no-trunc | xargs docker rm // Remove stopped containers
+docker ps --since a1bz3768ez7g -q | xargs docker rm // Remove containers created after a specific container
+docker ps --before a1bz3768ez7g -q | xargs docker rm // Remove containers created before a specific container
+docker rm $(docker ps -a -q) // Remove all containers
+
+// building
+// Use --rm together with docker build to remove intermediary images during the build process
+```
+
+## Managing Docker Environments
+
+[Portainer | Simple management UI for Docker](https://portainer.io/)
+To Deploy
+```
+docker volume create portainer_data
+docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
+```
+
+Altair
+Kitematic
+Docker Swarm
