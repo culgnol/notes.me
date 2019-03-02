@@ -2,4 +2,4 @@
 
 <<markdown.adoc#,Markdown>>
 
-<<ascii.adoc#,AsciiDoc>>
+<<asciidoc.adoc#,AsciiDoc>>
