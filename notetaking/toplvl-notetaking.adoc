@@ -1,5 +1,0 @@
-= Toplevel Notetaking
-
-<<markdown.adoc#,Markdown>>
-
-<<asciidoc.adoc#,AsciiDoc>>

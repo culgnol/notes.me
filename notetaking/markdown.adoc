@@ -15,6 +15,9 @@ Others
 * [Github Guide (PDF)](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 * https://stackoverflow.com/questions/14675913/changing-image-size-in-markdown
 
+Github markdown emoji markup
+https://gist.github.com/rxaviers/7360908
+
 Example Changing Image Size
 "...png =250x)"
 

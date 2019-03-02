@@ -2,7 +2,7 @@
 
 Me adding notes.
 
-[Notetaking](notetaking/toplvl-notetaking.adoc)
+[Notetaking](notetaking/notetaking.md)
 
 #### Props
 [@jordanorelli]: [Zombie Approach](https://gist.github.com/jordanorelli/11229304)
