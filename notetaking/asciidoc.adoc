@@ -67,28 +67,11 @@ https://ivoanjo.me/blog/2017/10/22/asciidoc-an-awesome-markdown-alternative/[201
 
 == Examples
 
-== AsciiDoc on Github
-(User example hosted in Github) https://gist.github.com/dcode/
+=== Source Highlighting
 
-Common Stuff I would probably do:
+Basic source example with Callouts
 [source, asciidoc]
 ----
-  = Test AsciiDoc
-  :toc:
-  :toc-placement!:
-
-  Sample gist written in the AsciiDoctor format <<ascii-man>>
-
-  == Adding a TOC
-
-  Example table of contents <<ascii-toc>>
-
-  toc::[]
-
-  == Source Code Highlighting
-
-  The following is an example of Source Code Highlighting and Callouts written in `asciidoc`<<ascii-src>>
-
   [source,ruby]
   ----
   require 'sinatra' // <1>
@@ -100,47 +83,28 @@ Common Stuff I would probably do:
   <1> Library import
   <2> URL mapping
   <3> HTTP response body
-
-  == Book parts and chapters
-
-  Other interesting book parts <<ascii-book>>
-
-  [glossary]
-  mud:: wet, cold dirt
-
-  == Quotes
-
-  Adding quotes <<ascii-quote>>
-
-  .After landing the cloaked Klingon bird of prey in Golden Gate park: 
-  [quote, Captain James T. Kirk, Star Trek IV: The Voyage Home]     
-  Everybody remember where we parked.
-
-  == Github environment paths
-
-  [source,asciidoc]
-  ----
-  [source]
-  ----
-  \ifdef::env-github[] \<1>
-  :imagesdir: https://gist.githubusercontent.com/path/to/gist/revision/dir/with/all/images
-  \endif::[]
-  \ifndef::env-github[] \<2> 
-  :imagesdir: ./
-  \endif::[]
-  ----
-  <1> Use the `ifdef` to customize for online rendering
-  <2> Use the `ifndef` to customize for offline
-  ----
-
-
-  [bibliography]
-  == References
-
-  - [[[ascii-man,1]]] https://asciidoctor.org/docs/user-manual
-  - [[[ascii-src,2]]] https://asciidoctor.org/docs/user-manual/#source-code-blocks
-  - [[[ascii-toc,3]]] https://asciidoctor.org/docs/user-manual/#user-toc
-  - [[[ascii-bib,4]]] https://asciidoctor.org/docs/user-manual/#user-biblio
-  - [[[ascii-book,5]]] https://asciidoctor.org/docs/user-manual/#book-parts-and-chapters
-  - [[[ascii-quote,6]]] https://asciidoctor.org/docs/user-manual/#quote
 ----
+
+AsciiDoc source example (_*remember to indent*_)
+[source,asciidoc]
+----
+  [source, asciidoc]
+  ----
+    [source,ruby]
+    ----
+    require 'sinatra' \<1>
+
+    get '/hi' do \<2>
+      "Hello World!" \<3>
+    end
+    ----
+    <1> Library import
+    <2> URL mapping
+    <3> HTTP response body
+  ----
+----
+
+=== AsciiDoc on Github
+(User example hosted in Github) https://gist.github.com/dcode/0cfbf2699a1fe9b46ff04c41721dda74#callouts
+
+Common Stuff I would probably do <<examples/asciidoc-example.adoc#,asciidoc-example.adoc>>
