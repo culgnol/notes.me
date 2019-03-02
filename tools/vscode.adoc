@@ -1,0 +1,9 @@
+= Visual Studio Code
+
+:toc:
+:toc-placement!:
+
+toc::[]
+
+== Extensions
+

@@ -1,7 +1,12 @@
 = AsciiDoc
+Alternative to Markdown, better toolset for writing documentation
+:toc:
+:toc-placement!:
 
-AsciiDoctor
+toc::[]
 
+[quote, https://asciidoctor.org/docs/user-manual/#asciidoc-syntax-processing]
+Asciidoctor reads and parses text written in the AsciiDoc syntax, then feeds the parse tree into a set of built-in templates to produce HTML5, PDF, DocBook 5, etc.
 
 https://asciidoctor.org/docs/asciidoc-vs-markdown/#comparison-by-example
 
@@ -35,3 +40,88 @@ https://github.com/lewish/asciiflow2
 
 
 https://leanpub.com/awesomeasciidoctornotebook/read#leanpub-auto-source-code
+
+== Plugins
+
+Visual Studio Code Extension - https://github.com/asciidoctor/asciidoctor-vscode
+
+
+== Example
+
+== AsciiDoc on Github
+(User example hosted in Github) https://gist.github.com/dcode/
+
+Common Stuff I would probably do:
+[source, asciidoc]
+----
+  = Test AsciiDoc
+  :toc:
+  :toc-placement!:
+
+  Sample gist written in the AsciiDoctor format <<ascii-man>>
+
+  == Adding a TOC
+
+  Example table of contents <<ascii-toc>>
+
+  toc::[]
+
+  == Source Code Highlighting
+
+  The following is an example of Source Code Highlighting and Callouts written in `asciidoc`<<ascii-src>>
+
+  [source,ruby]
+  ----
+  require 'sinatra' // <1>
+
+  get '/hi' do // <2>
+    "Hello World!" // <3>
+  end
+  ----
+  <1> Library import
+  <2> URL mapping
+  <3> HTTP response body
+
+  == Book parts and chapters
+
+  Other interesting book parts <<ascii-book>>
+
+  [glossary]
+  mud:: wet, cold dirt
+
+  == Quotes
+
+  Adding quotes <<ascii-quote>>
+
+  .After landing the cloaked Klingon bird of prey in Golden Gate park: 
+  [quote, Captain James T. Kirk, Star Trek IV: The Voyage Home]     
+  Everybody remember where we parked.
+
+  == Github environment paths
+
+  [source,asciidoc]
+  ----
+  [source]
+  ----
+  \ifdef::env-github[] \<1>
+  :imagesdir: https://gist.githubusercontent.com/path/to/gist/revision/dir/with/all/images
+  \endif::[]
+  \ifndef::env-github[] \<2> 
+  :imagesdir: ./
+  \endif::[]
+  ----
+  <1> Use the `ifdef` to customize for online rendering
+  <2> Use the `ifndef` to customize for offline
+  ----
+
+
+  [bibliography]
+  == References
+
+  - [[[ascii-man,1]]] https://asciidoctor.org/docs/user-manual
+  - [[[ascii-src,2]]] https://asciidoctor.org/docs/user-manual/#source-code-blocks
+  - [[[ascii-toc,3]]] https://asciidoctor.org/docs/user-manual/#user-toc
+  - [[[ascii-bib,4]]] https://asciidoctor.org/docs/user-manual/#user-biblio
+  - [[[ascii-book,5]]] https://asciidoctor.org/docs/user-manual/#book-parts-and-chapters
+  - [[[ascii-quote,6]]] https://asciidoctor.org/docs/user-manual/#quote
+----
