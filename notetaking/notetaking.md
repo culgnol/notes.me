@@ -13,7 +13,7 @@ Most basic of the bunch.
 Most notable feature I like:
 
 - Adding callouts to source code highlights
-- Adding bibilography / references
+- Adding bibilography / references / footnotes
 - You can add a TOC!!!
 - Additional you can be parsed to generate HTML5, PDF, etc content
 
