@@ -1,5 +1,7 @@
 = AsciiDoc
 Alternative to Markdown, better toolset for writing documentation
+:toc:
+:toc-placement!:
 ifdef::env-github[]
 :status:
 :outfilesuffix: .adoc
@@ -10,8 +12,6 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-:toc:
-:toc-placement!:
 
 toc::[]
 
