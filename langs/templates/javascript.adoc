@@ -1,0 +1,11 @@
+// :language: javascript
+// include::template.adoc[]
+
+= Javascript
+:toc:
+:toc-placement!:
+
+toc::[]
+
+== Arrays
+include::../fragments/fragment-arrays.adoc[tag=javascript]

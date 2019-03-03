@@ -1,4 +1,4 @@
-= Langauges
+= Languages
 :!csharp:
 Quick reference for programming languages
 :toc:
@@ -6,4 +6,11 @@ Quick reference for programming languages
 
 toc::[]
 
-<<javascript.adoc#,Javascript>>
+Currently Github doesn't support the `include` directive
+
+* https://github.com/github/markup/issues/1095
+
+For now, go to the "fragments" directory. Once resolved the following docs will properly render:
+
+* <<templates/fragments.adoc#,All Snippets>>
+* <<templates/javascript.adoc#,Javascript>>

@@ -27,6 +27,8 @@ image:https://ci.appveyor.com/api/projects/status/ifplu67oxvgn6ceq/branch/master
 image:https://inch-ci.org/github/asciidoctor/asciidoctor.svg?branch=master[Inline docs, link="https://inch-ci.org/github/asciidoctor/asciidoctor"]
 endif::[]
 
+== AsciiDoctor
+
 https://asciidoctor.org/docs/user-manual/[User Manual]
 
 * https://asciidoctor.org/docs/asciidoc-vs-markdown/#comparison-by-example
@@ -47,7 +49,20 @@ Diagrams
 https://asciidoctor.org/docs/asciidoctor-diagram/
 https://github.com/lewish/asciiflow2
 
+=== Features
 
+==== Templates
+
+Optionally displaying content based on...
+
+* attributes - http://mrhaki.blogspot.com/2014/08/awesome-asciidoc-using-conditional.html
+** https://stackoverflow.com/questions/37311579/passing-parameters-to-template-files-in-asciidoc
+
+* tagged regions - https://asciidoctor.org/docs/user-manual/#by-tagged-regions
+
+* referencing other docs - https://asciidoctor.org/docs/user-manual/#include-multiple
+
+Note: Not supported in Github yet - https://github.com/github/markup/issues/1095
 
 
 https://leanpub.com/awesomeasciidoctornotebook/read#leanpub-auto-source-code
