@@ -1,9 +1,9 @@
-= Langs
+= Langauges
+:!csharp:
 Quick reference for programming languages
 :toc:
 :toc-placement!:
 
 toc::[]
 
-<<../README.md#,Home>>
-[\[:house:\]](../README.md)
+<<javascript.adoc#,Javascript>>
