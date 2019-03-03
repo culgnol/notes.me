@@ -1,9 +1,13 @@
 = Docker
+:toc:
+:toc-placement!:
 
-## Common Stuff
+toc::[]
 
-```
-// listing
+== Common Stuff
+
+=== listing
+
 docker images // list all images
 
 docker ps -a // list all containers
@@ -11,7 +15,8 @@ docker ps -aq -f status=exited // list all exited containers
 
 docker volume ls // list all volumes
 
-// removing
+=== removing
+
 docker images -q --filter dangling=true | xargs docker rmi // Remove dangling/untagged images
 
 docker ps -aq --no-trunc | xargs docker rm // Remove stopped containers
@@ -19,13 +24,15 @@ docker ps --since a1bz3768ez7g -q | xargs docker rm // Remove containers created
 docker ps --before a1bz3768ez7g -q | xargs docker rm // Remove containers created before a specific container
 docker rm $(docker ps -a -q) // Remove all containers
 
-// building
+=== building
+
 // Use --rm together with docker build to remove intermediary images during the build process
-```
 
-## Managing Docker Environments
 
-[Portainer | Simple management UI for Docker](https://portainer.io/)
+== Managing Docker Environments
+
+https://portainer.io/[Portainer | Simple management UI for Docker]
+
 To Deploy
 ```
 docker volume create portainer_data
