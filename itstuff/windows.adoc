@@ -1,0 +1,20 @@
+= Windows
+:toc:
+:toc-placement!:
+
+toc::[]
+
+== OS Installation
+
+https://lifehacker.com/the-ultimate-guide-to-reinstalling-windows-from-scratch-1832897572
+
+https://lifehacker.com/how-to-migrate-to-a-solid-state-drive-without-reinstall-5837543
+
+== Virtual Machines
+Windows 10 Develop Virtual Machines
+
+https://developer.microsoft.com/en-us/windows/downloads/virtual-machines
+
+Microsoft Edge Virtual Machines
+
+https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
