@@ -29,6 +29,18 @@ endif::[]
 
 == AsciiDoctor
 
+=== Install
+
+Basic AsciiDoc syntax is supported on Github, see  <<_asciidoc_on_github>>
+
+To run AsciiDoctor as a javascript reference in the web browser on Node.js, see the transcompiled code in the https://github.com/asciidoctor/asciidoctor.js[AsciiDoctor.js Github repo]
+
+To compile AsciiDoc files to other output formats (HTML5, PDF, etc.)
+
+https://asciidoctor.org/docs/install-asciidoctor-macos/
+
+=== Features
+
 https://asciidoctor.org/docs/user-manual/[User Manual]
 
 * https://asciidoctor.org/docs/asciidoc-vs-markdown/#comparison-by-example
@@ -42,14 +54,9 @@ https://asciidoctor.org/docs/user-manual/[User Manual]
 https://asciidoctor.org/docs/asciidoc-recommended-practices/
 https://asciidoctor.org/docs/asciidoc-recommended-practices/#attribute-groups
 
-https://asciidoctor.org/docs/install-asciidoctor-macos/
-
-
-Diagrams
+==== Diagrams
 https://asciidoctor.org/docs/asciidoctor-diagram/
 https://github.com/lewish/asciiflow2
-
-=== Features
 
 ==== Templates
 
