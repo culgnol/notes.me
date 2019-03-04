@@ -1,0 +1,22 @@
+= {language}
+:langs: javascript
+
+:toc:
+:toc-placement!:
+
+toc::[]
+
+== Variables
+
+== Arrays
+include::fragment-arrays.adoc[tag={langs}]
+
+== Classes
+
+=== Methods
+
+=== Properties
+
+---
+
+link:../README.md[Home]
