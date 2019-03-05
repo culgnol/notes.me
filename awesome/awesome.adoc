@@ -8,7 +8,9 @@ toc::[]
 
 |===
 |Projects | Notes
+a| https://github.com/badges/shields | Badges for Github!
 a|https://github.com/qiao/PathFinding.js[A comprehensive path-finding library for grid based games]
 
-image::./imgs/qiao_pathfinding.png[,150,,align="center"] | Pluggable in Node.js or browser. And demos/provides several pathfinding algorithms.
+image::./imgs/qiao_pathfinding.png[,150,,align="center"] 
+image:https://img.shields.io/github/last-commit/qiao/pathfinding.js.svg[GitHub last commit] | Pluggable in Node.js or browser. And demos/provides several pathfinding algorithms.
 |===

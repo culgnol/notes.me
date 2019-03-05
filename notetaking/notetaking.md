@@ -28,8 +28,17 @@ https://mermaidjs.github.io/
 https://github.com/lewish/asciiflow2
 * http://asciiflow.com/
 
-Other recommendations:
+https://cloudcraft.co
+
+Other compiled lists:
 https://gist.github.com/rodneyrehm/40e7946c0cff68a31cea
+
+Resources:
+https://aws.amazon.com/architecture/icons/
+
+## Github Badges
+
+https://github.com/badges/shields
 
 ---
 
