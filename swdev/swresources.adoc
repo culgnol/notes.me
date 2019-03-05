@@ -1,0 +1,54 @@
+= Software Resources
+:toc:
+:toc-placement!:
+
+toc::[]
+
+== Puzzles
+
+https://github.com/Bogdanp/awesome-advent-of-code
+
+https://www.kaggle.com/
+
+https://leetcode.com/
+
+== Live Coding
+
+https://www.livecoding.tv/
+
+== Tech Hiring / Practice
+
+https://www.hackerrank.com/
+
+https://codesignal.com/
+
+== Sharing
+
+https://coderwall.com/
+
+https://asciinema.org/
+
+== Help
+
+https://stackexchange.com/sites
+
+https://www.reddit.com/r/programming/
+
+== Hackathons
+
+https://hacknyu.org/
+
+== News
+
+https://news.ycombinator.com
+
+https://dev.to/
+
+https://itnext.io/
+
+== Engineering Blogs
+
+https://www.quickcode.co/engineering-blogs
+
+https://github.com/kilimchoi/engineering-blogs
+
