@@ -6,10 +6,13 @@ Currently Github doesn't support the `include` directive of AsciiDoc:
 
 * https://github.com/github/markup/issues/1095
 
-For now, go to the [fragments](fragments/) directory. Once resolved the following asciidoc's will properly render (or view locally):
+For now, go to the [fragments](fragments/) directory to view the code snippets.
 
-* [All Snippets](templates/fragments.adoc)
-* [Javascript](templates/javascript.adoc)
+Alternatively, build or view the documents locally.
+
+* [Show All Fragments](templates/all.adoc)
+* [C# Fragments](templates/csharp.adoc)
+* [Javascript Fragments](templates/javascript.adoc)
 
 ---
 

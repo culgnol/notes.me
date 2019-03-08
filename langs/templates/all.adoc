@@ -1,2 +1,2 @@
-:csharp:
+:showall:
 include::template.adoc[]

@@ -1,6 +1,5 @@
 = {language}
-:langs: javascript
-
+:fragmentsdir: ../fragments
 :toc:
 :toc-placement!:
 
@@ -9,13 +8,13 @@ toc::[]
 == Variables
 
 == Arrays
-include::fragment-arrays.adoc[tag={langs}]
+include::{fragmentsdir}/fragment-arrays.adoc[]
 
 == Classes
 
-=== Methods
+== Community
+include::{fragmentsdir}/fragment-community.adoc[]
 
-=== Properties
 
 ---
 

@@ -74,6 +74,10 @@ Note: Not supported in Github yet - https://github.com/github/markup/issues/1095
 
 https://leanpub.com/awesomeasciidoctornotebook/read#leanpub-auto-source-code
 
+=== References
+
+https://isis.apache.org/guides/dg/resources/asciidoc-writers-guide.pdf
+
 == Plugins
 
 Visual Studio Code Extension
