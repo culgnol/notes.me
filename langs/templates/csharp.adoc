@@ -1,2 +1,3 @@
 :csharp:
+:language: csharp
 include::template.adoc[]
