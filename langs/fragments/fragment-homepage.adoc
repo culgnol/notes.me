@@ -1,0 +1,39 @@
+// tag::javascript[]
+ifdef::javascript,showall[]
+
+=== Javascript Homepage
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+endif::[]
+// end::javascript[]
+
+// tag::csharp[]
+ifdef::csharp,showall[]
+
+=== C# Homepage
+
+https://docs.microsoft.com/en-us/dotnet/csharp/
+
+endif::[]
+// end::csharp[]
+
+// tag::typescript[]
+ifdef::typescript,showall[]
+
+=== Typescript Homepage
+
+https://www.typescriptlang.org/
+
+endif::[]
+// end::typescript[]
+
+// tag::fsharp[]
+ifdef::fsharp,showall[]
+
+=== F# Homepage
+
+https://docs.microsoft.com/en-us/dotnet/fsharp/
+
+endif::[]
+// end::fsharp[]

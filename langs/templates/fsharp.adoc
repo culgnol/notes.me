@@ -1,0 +1,3 @@
+:fsharp:
+:language: fsharp
+include::template.adoc[]

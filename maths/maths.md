@@ -1,0 +1,1 @@
+Here is an in-line equation \\[ \sqrt{3x-1}+(1+x)^2 \\] in the body of the text.

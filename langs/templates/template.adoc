@@ -5,6 +5,9 @@
 
 toc::[]
 
+== Main
+include::{fragmentsdir}/fragment-homepage.adoc[]
+
 == Variables
 
 == Arrays
