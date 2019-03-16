@@ -46,6 +46,33 @@ print("hello world!")
 
 '''
 
+Example Directory Structure
+https://stackoverflow.com/questions/19699059/representing-directory-file-structure-in-markdown-syntax
+
+```
+root
+├── dir1
+│   └── file1
+└── dir2
+    └── file2
+```
+
+```
+.
+|-- ContentStore
+|   |-- de-DE
+|   |   |-- art.mshc
+|   |   |-- artnoloc.mshc
+|   |   |-- clientserver.mshc
+|   |   |-- noarm.mshc
+|   |   |-- resources.mshc
+|   |   `-- windowsclient.mshc
+|   `-- en-US
+|       |-- art.mshc
+```
+
+More interactive example: https://github.com/atstp/wasabi
+
 == IDE Extensions
 
 * https://code.visualstudio.com/docs/languages/markdown
