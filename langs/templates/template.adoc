@@ -15,6 +15,9 @@ include::{fragmentsdir}/fragment-arrays.adoc[]
 
 == Classes
 
+== Namespaces and Modules
+include::{fragmentsdir}/fragment-modules.adoc[]
+
 == Community
 include::{fragmentsdir}/fragment-community.adoc[]
 

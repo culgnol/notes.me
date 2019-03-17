@@ -1,0 +1,34 @@
+= AWS SDK
+
+== AWS SDK for .NET
+http://aws.amazon.com/sdkfornet/
+https://github.com/aws/aws-sdk-net/
+https://docs.aws.amazon.com/sdkfornet1/latest/apidocs/html/T_Amazon_S3_AmazonS3Client.htm
+
+https://docs.aws.amazon.com/sdk-for-net/v3/developer-guide/tutorials-examples.html
+
+=== S3
+
+Examples
+
+https://github.com/awslabs/aws-sdk-net-samples/blob/master/ConsoleSamples/AmazonS3Sample/AmazonS3Sample/S3Sample.cs
+https://docs.aws.amazon.com/AmazonS3/latest/dev/RetrievingObjectUsingNetSDK.html
+
+Accessing Public Datasets
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-public-data-sets.html
+https://registry.opendata.aws/commoncrawl/
+
+* https://rushter.com/blog/python-fast-html-parser/
+* https://engineeringblog.yelp.com/2015/03/analyzing-the-web-for-the-price-of-a-sandwich.html
+
+How to access public datasets without credentials using the AWS SDK?
+
+https://stackoverflow.com/questions/47124876/how-to-specify-aws-credentials-in-c-sharp-net-core-console-program
+* https://docs.aws.amazon.com/sdkfornet1/latest/apidocs/html/T_Amazon_Runtime_AnonymousAWSCredentials.htm
+
+// tag::code[]
+```
+IAmazonS3 client = new AmazonS3Client(new AnonymousAWSCredentials(), RegionEndpoint.USEast1);
+```
+// end::code[]

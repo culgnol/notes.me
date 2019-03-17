@@ -1,0 +1,50 @@
+// tag::javascript[]
+ifdef::javascript,showall[]
+
+=== Javascript Modules
+
+By definition "modules" refers to small units of independent, resuable code.
+
+https://spring.io/understanding/javascript-modules
+
+https://eloquentjavascript.net/10_modules.html
+
+https://medium.freecodecamp.org/javascript-modules-a-beginner-s-guide-783f7d7a5fcc
+
+https://developers.google.com/web/fundamentals/primers/modules
+
+https://humanwhocodes.com/blog/2019/01/stop-using-default-exports-javascript-module/
+
+endif::[]
+// end::javascript[]
+
+// tag::csharp[]
+ifdef::csharp,showall[]
+
+=== C# Namespaces
+
+https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/namespaces/
+
+.NET Framework uses namespaces in large code projects to...
+
+* Organize its many classes
+* Control the scope of a class and method names
+
+endif::[]
+// end::csharp[]
+
+// tag::typescript[]
+ifdef::typescript,showall[]
+
+=== TBD
+
+endif::[]
+// end::typescript[]
+
+// tag::fsharp[]
+ifdef::fsharp,showall[]
+
+=== TBD
+
+endif::[]
+// end::fsharp[]

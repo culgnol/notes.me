@@ -1,0 +1,6 @@
+= .NET Core
+
+=== Issues
+
+dotnet: command not found mac OS X
+https://github.com/dotnet/cli/issues/2544#issuecomment-220248063

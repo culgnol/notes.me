@@ -66,6 +66,7 @@ Optionally displaying content based on...
 ** https://stackoverflow.com/questions/37311579/passing-parameters-to-template-files-in-asciidoc
 
 * tagged regions - https://asciidoctor.org/docs/user-manual/#by-tagged-regions
+** http://discuss.asciidoctor.org/multiple-tags-td2451.html
 
 * referencing other docs - https://asciidoctor.org/docs/user-manual/#include-multiple
 

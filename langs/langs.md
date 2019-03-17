@@ -14,6 +14,42 @@ Alternatively, build or view the documents locally.
 * [C# Fragments](templates/csharp.adoc)
 * [Javascript Fragments](templates/javascript.adoc)
 
+Creation pattern for the fragment files:
+```
+// tag::javascript[]
+ifdef::javascript,showall[]
+
+=== TBD
+
+endif::[]
+// end::javascript[]
+
+// tag::csharp[]
+ifdef::csharp,showall[]
+
+=== TBD
+
+endif::[]
+// end::csharp[]
+
+// tag::typescript[]
+ifdef::typescript,showall[]
+
+=== TBD
+
+endif::[]
+// end::typescript[]
+
+// tag::fsharp[]
+ifdef::fsharp,showall[]
+
+=== TBD
+
+endif::[]
+// end::fsharp[]
+```
+
+
 ---
 
 [\[:house:\]](../README.md)
