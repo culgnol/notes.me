@@ -1,0 +1,9 @@
+= Azure SDK
+
+
+== Azure SDK for .NET
+
+// tag::sdk,cloudstorage[]
+=== Azure Cloud Storage
+
+// end::sdk,cloudstorage[]

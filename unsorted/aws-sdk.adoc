@@ -7,6 +7,7 @@ https://docs.aws.amazon.com/sdkfornet1/latest/apidocs/html/T_Amazon_S3_AmazonS3C
 
 https://docs.aws.amazon.com/sdk-for-net/v3/developer-guide/tutorials-examples.html
 
+// tag::sdk,cloudstorage[]
 === S3
 
 Examples
@@ -32,3 +33,4 @@ https://stackoverflow.com/questions/47124876/how-to-specify-aws-credentials-in-c
 IAmazonS3 client = new AmazonS3Client(new AnonymousAWSCredentials(), RegionEndpoint.USEast1);
 ```
 // end::code[]
+// end::sdk,cloudstorage[]

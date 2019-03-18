@@ -1,0 +1,12 @@
+= Google SDK
+
+
+== Google SDK for .NET
+
+https://www.google.com/search?q=google+cloud+storage+.net+sdk&oq=google+cloud+storage+.net+sdk&aqs=chrome..69i57j69i64.18844j1j7&sourceid=chrome&ie=UTF-8
+
+
+// tag::sdk,cloudstorage[]
+=== Google Cloud Storage
+
+// end::sdk,cloudstorage[]
