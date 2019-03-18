@@ -1,4 +1,43 @@
 = .NET Core
+:toc:
+:toc-placement!:
+
+toc::[]
+
+== About
+
+__dotnet__ (or .NET Core) is an open source, cross-platform platform.footnote:[https://docs.microsoft.com/en-us/dotnet/core/]
+
+
+__ASP.NET Core__ is a cross-platform, high-performance, open-source framework for building modern, cloud-based, Internet-connected applications, built ontop of the .NET Core platform.footnote:[https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-2.2]
+
+== Background Tasks
+
+https://www.google.com/search?q=creating+a+backgroud+process+with+.net+core&oq=creating+a+backgroud+process+with+.net+core&aqs=chrome..69i57.10538j1j4&sourceid=chrome&ie=UTF-8
+
+https://dotnetthoughts.net/background-tasks-in-asp-net-core/
+
+https://docs.microsoft.com/en-us/aspnet/core/fundamentals/host/hosted-services
+
+https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/multi-container-microservice-net-applications/background-tasks-with-ihostedservice
+
+https://medium.com/@daniel.sagita/backgroundservice-for-a-long-running-work-3debe8f8d25b
+
+https://mitchelsellers.com/blogs/2018/11/14/implementing-background-tasks-in-aspnet-core-with-hangfire
+
+https://www.hangfire.io/
+
+https://www.infoworld.com/article/3261084/how-to-implement-background-processing-in-aspnet-core.html
+
+
+https://stackoverflow.com/questions/49813628/run-a-background-task-from-a-controller-action-in-asp-net-core-2
+
+* https://stackoverflow.com/questions/48893141/run-background-service-in-net-core
+* https://stackoverflow.com/questions/48321329/short-running-background-task-in-net-core
+
+https://www.hanselman.com/blog/ASPNETCoreArchitectDavidFowlersHiddenGemsIn21.aspx
+
+https://www.hanselman.com/blog/ASPNETCoreArchitectDavidFowlersHiddenGemsIn21.aspx
 
 === Issues
 

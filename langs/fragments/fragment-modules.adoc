@@ -48,3 +48,11 @@ ifdef::fsharp,showall[]
 
 endif::[]
 // end::fsharp[]
+
+// tag::python[]
+ifdef::python,showall[]
+
+=== TBD
+
+endif::[]
+// end::python[]

@@ -37,3 +37,13 @@ https://docs.microsoft.com/en-us/dotnet/fsharp/
 
 endif::[]
 // end::fsharp[]
+
+// tag::python[]
+ifdef::python,showall[]
+
+=== Python Homepage
+
+https://www.python.org/
+
+endif::[]
+// end::python[]
