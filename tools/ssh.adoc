@@ -1,0 +1,54 @@
+= SSH Tips and Tricks
+:toc:
+:toc-placement!:
+
+toc::[]
+
+== Logging In
+
+`$ ssh user@example.com`
+
+`$ ssh user@example.com -p 3307`
+
+AWS Logging In
+
+`$ ssh -i /path/to/identity.pem user@example.com`
+
+NOTE! You may need to set permissions on the .pem file so only the owner can read/write/execute it. 
+If you don’t aware of how to set/change Permission  https://miteshshah.github.io/linux/basics/users-groups-and-permissions/#changing-permissions[Check this guide]
+
+== SSH Config
+
+```
+$ vim ~/.ssh/config
+Host srv001
+    HostName example.com
+    Port 2222
+    User MiteshShah
+    IdentityFile  ~/.ssh/id_example
+    IdentitiesOnly yes
+
+Host srv002
+    HostName 192.168.33.10
+    User root
+    PubkeyAuthentication no
+
+Host aws
+    HostName some.address.ec2.aws.com
+    User ubuntu
+    IdentityFile  ~/.ssh/aws_identity.pem
+    IdentitiesOnly yes
+```
+
+Let’s cover the options used above:
+
+* `HostName` - The server host (domain or ipaddress)
+* `Port` - The port to use when connecting
+* `User` - The username to log in with
+* `IdentityFile` - The SSH key identity to use to log in with, if using SSH key access
+* `IdentitiesOnly` - Yes to specify only attempting to log in via SSH key
+* `PubkeyAuthentication` - No to specify you wish to bypass attempting SSH key authentication
+
+Then log in `$ ssh aws`
+
+https://miteshshah.github.io/linux/ssh/ssh-tips-and-tricks/

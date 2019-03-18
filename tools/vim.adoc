@@ -1,0 +1,38 @@
+= vim
+
+Installation/Setup
+For the most part, VIM is installed on any UNIX-like environment, else http://sourabhbajaj.com/mac-setup/Vim/README.html
+
+
+Config
+.vimrc
+
+
+Cheatsheet
+Most basic commands can be found in by running the "vimtutor" tutorial
+
+AlwaysForgot
+Search
+/foobar <ENTER>
+"n" to move to next result
+"ctrl-o" to move back to beginning result
+Common
+Directional arrows
+j - up
+k- down
+h - left
+l - right
+
+Tutorials
+https://medium.com/actualize-network/how-to-learn-vim-a-four-week-plan-cd8b376a9b85
+https://robots.thoughtbot.com/the-vim-learning-curve-is-a-myth
+https://hackercodex.com/guide/vim-search-find-in-project/
+https://hackernoon.com/learning-vim-what-i-wish-i-knew-b5dca186bef7?gi=df8eed2194fc
+
+https://dougblack.io/words/a-good-vimrc.html
+
+https://hackernoon.com/enhance-your-ide-with-vim-10b0a6ae2e40
+
+https://hackernoon.com/useful-vim-tricks-for-2019-e7c1db7a18d6
+
+https://www.lucasfcosta.com/2019/02/10/terminal-guide-2019.html

@@ -1,0 +1,33 @@
+= Package Managers
+:toc:
+:toc-placement!:
+
+toc::[]
+
+== Homebrew
+
+https://brew.sh/
+
+https://medium.com/@waxzce/keeping-macos-clean-this-is-my-osx-brew-update-cli-command-6c8f12dc1731
+
+== NVM
+
+https://github.com/creationix/nvm
+
+== NPM
+
+https://www.npmjs.com/
+
+== PIP
+
+PIP is a package manager for Python packages/modules
+
+https://pypi.org/
+
+== RVM
+
+https://rvm.io/
+
+== Chocolatey
+
+== Nuget
