@@ -1,0 +1,16 @@
+= Git
+
+== Common
+
+[cols="1,1,2", options="header"] 
+.Common Git Commands
+|===
+|Action
+|Command
+|Notes
+
+|Unix Timestamp
+|`date +%s`
+|https://stackoverflow.com/questions/1204669/how-can-i-generate-unix-timestamps
+
+|===

@@ -1,0 +1,59 @@
+= Terminal / Command-Line
+:toc:
+:toc-placement!:
+
+toc::[]
+
+== Common
+
+[cols="1,1,2", options="header"] 
+.Common Terminal Commands
+|===
+|Action
+|Command
+|Notes
+
+|Unix Timestamp
+|`date +%s`
+|https://stackoverflow.com/questions/1204669/how-can-i-generate-unix-timestamps
+
+|===
+
+== Customizing
+
+https://medium.com/the-code-review/make-your-terminal-more-colourful-and-productive-with-iterm2-and-zsh-11b91607b98c
+
+== Find, Replace, Update
+
+`find` - search for files (by name, type, extension) on the system
+```
+find / -type f -name "*.jdk"
+```
+
+`grep` - search for specific terms in a file
+```
+grep -o "tag::.*.\[\]" snippet_20190328.adoc
+```
+
+`awk` - text processor; mostly used for data extraction
+```
+$ cat file.txt
+A 10
+B 20
+C 60
+$ awk 'BEGIN {sum=0; count=0; OFS="\t"} {sum+=$2; count++} END {print "Average:", sum/count}' file.txt
+Average:    30
+```
+
+`sed` - text processor; stream editor
+```
+$ sed -i 's/cat/dog/' file.txt
+# this will replace any occurrence of the characters 'cat' by 'dog'
+```
+
+== Shells
+
+bash
+zsh
+
+powershell

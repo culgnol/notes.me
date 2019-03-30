@@ -1,0 +1,18 @@
+
+// tag::terminal[]
+[quote, me]
+____
+Used the following links to find the files that contained a string matching a specific pattern, strings that matched the pattern, and filtering the results for unique values only
+____
+
+https://unix.stackexchange.com/questions/276741/using-grep-and-looking-for-unique-occurrences
+
+https://unix.stackexchange.com/questions/393948/how-to-search-and-extract-string-from-command-output
+
+[source]
+----
+grep -iRl  "tag::" .
+grep -o "tag::.*.\[\]" snippet_20190328.adoc
+grep -iRoh  "tag::[A-Za-z]*\[\]" . | sort --unique
+----
+// end::terminal[]

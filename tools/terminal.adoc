@@ -1,7 +1,0 @@
-= Terminal / Command-Line
-:toc:
-:toc-placement!:
-
-toc::[]
-
-https://medium.com/the-code-review/make-your-terminal-more-colourful-and-productive-with-iterm2-and-zsh-11b91607b98c
