@@ -1,16 +1,38 @@
 = Git
+:toc: 
 
-== Common
+toc::[] 
 
-[cols="1,1,2", options="header"] 
-.Common Git Commands
-|===
-|Action
-|Command
-|Notes
+== Squashing Commits 
 
-|Unix Timestamp
-|`date +%s`
-|https://stackoverflow.com/questions/1204669/how-can-i-generate-unix-timestamps
+https://stackoverflow.com/questions/25356810/git-how-to-squash-all-commits-on-branch[Option 1: Resetting Index to Master] 
 
-|===
+[source]
+----
+git checkout yourBranch 
+git reset $(git merge-base master yourBranch) 
+git add -A 
+git commit -m "one commit on yourBranch" 
+---- 
+
+== Submodules 
+
+https://chrisjean.com/git-submodules-adding-using-removing-and-updating/ 
+
+[source] 
+---- 
+// Add 
+git submodules add [external repo url] [path to add submodule in main repo] 
+
+// Update 
+git submodule init 
+git submodule update 
+cd [path to added submodule in main repo] 
+git status 
+git checkout 
+git status 
+git pull 
+cd [main repo root] 
+git status 
+git add [path to added submodule in main repo] 
+---- 
