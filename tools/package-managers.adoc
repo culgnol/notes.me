@@ -4,6 +4,8 @@
 
 toc::[]
 
+Some mentions here: https://medium.com/@porteneuve/mastering-git-submodules-34c65e940407
+
 == Homebrew
 
 https://brew.sh/
@@ -18,11 +20,13 @@ https://github.com/creationix/nvm
 
 https://www.npmjs.com/
 
+// tag::python[]
 == PIP
 
 PIP is a package manager for Python packages/modules
 
 https://pypi.org/
+// end::python[]
 
 == RVM
 
@@ -31,3 +35,10 @@ https://rvm.io/
 == Chocolatey
 
 == Nuget
+
+== Go Package Managers
+
+https://www.google.com/search?ei=jc6fXNEXkbr6BOS2kZgF&q=golang+package+manager&oq=golang+package+manag&gs_l=psy-ab.1.0.0l3j0i22i30l5.1932.2539..3579...0.0..0.73.343.5......0....1..gws-wiz.......0i71.RO_ZhHcrUuQ
+
+dep
+glide

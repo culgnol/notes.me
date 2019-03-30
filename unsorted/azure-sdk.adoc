@@ -1,9 +1,15 @@
 = Azure SDK
+:toc:
+
+== Azure SDK for .NET{blank}footnote:msdoc[https://docs.microsoft.com/en-us/dotnet/azure/]
 
 
-== Azure SDK for .NET
 
 // tag::sdk,cloudstorage[]
 === Azure Cloud Storage
 
 // end::sdk,cloudstorage[]
+
+[bibliography]
+== References
+- [[[msdoc]]] https://docs.microsoft.com/en-us/dotnet/azure/
