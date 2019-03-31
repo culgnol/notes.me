@@ -13,3 +13,30 @@ TBD
 
 endif::[]
 // end::csharp[]
+
+// tag::python[]
+ifdef::python,showall[]
+
+=== Install Options
+
+1. Install Binary
+2. Homebrew
+3. Conda/Anaconda
+
+=== Virtualenv
+
+Using PyCharm
+
+* Setting up a virtualenv (https://www.jetbrains.com/help/pycharm-edu/creating-virtual-environment.html)
+
+=== PIP
+
+# Import modules from file
+pip install --requirement my-requirements.txt
+
+# Export installed modules
+pip freeze > requirements.txt
+
+
+endif::[]
+// end::python[]

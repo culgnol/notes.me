@@ -52,7 +52,46 @@ endif::[]
 // tag::python[]
 ifdef::python,showall[]
 
-=== TBD
+=== Modules / Libraries
+
+Some common libraries used...
+
+|===
+| Library | Link | Use
+
+| Pandas
+| https://pandas.pydata.org/
+| Useful data structures, and data analysis tools
+
+| NumPy
+| http://www.numpy.org/
+| 
+
+| Matplotlib
+| https://matplotlib.org/
+| Plotting
+
+
+|===
+
+==== SciPy
+https://www.scipy.org/
+
+SciPy (pronounced “Sigh Pie”) is a Python-based ecosystem of open-source software for mathematics, science, and engineering
+
+==== scikit-learn
+https://scikit-learn.org/stable/install.html
+
+Machine Learning in Python
+
+==== Pandas
+https://pandas.pydata.org/
+
+==== NumPy
+http://www.numpy.org/
+
+==== Matplotlib
+https://matplotlib.org/
 
 endif::[]
 // end::python[]

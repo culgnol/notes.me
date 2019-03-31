@@ -69,6 +69,7 @@ Alternative to using the open(filename, mode)
 import urllib
 file(filename, mode)
 
+==== Jupyter Notebook
 
 endif::[]
 // end::python[]
