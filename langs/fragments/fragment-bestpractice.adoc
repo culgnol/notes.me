@@ -1,0 +1,46 @@
+// tag::javascript[]
+ifdef::javascript,showall[]
+
+TBD
+
+endif::[]
+// end::javascript[]
+
+// tag::csharp[]
+ifdef::csharp,showall[]
+
+TBD
+
+endif::[]
+// end::csharp[]
+
+
+// tag::python[]
+ifdef::python,showall[]
+
+|===
+| What | Why
+
+| Tabs or Spaces
+| 2-4 spaces preferred over tabs
+
+| Line endings 
+| should always be "LF" and never "CR"
+
+| Module Referencing
+| "fully qualified" variable name-to-object binding (recommended)
+```
+import sys
+sys.exit(0)
+```
+
+"short name" referencing
+```
+from sys import argv, exit
+exit(0)
+```
+
+|===
+
+endif::[]
+// end::python[]

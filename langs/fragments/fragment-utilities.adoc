@@ -1,0 +1,74 @@
+// tag::javascript[]
+ifdef::javascript,showall[]
+
+TBD
+
+endif::[]
+// end::javascript[]
+
+// tag::python[]
+ifdef::python,showall[]
+
+=== Utilities
+
+os and os.path -- for interacting with the file system
+shutil -- for copying files
+
+Ways to run external processes
+Depreciated in 2.6+ and 3.x
+	• commands.getstatusoutput
+	• commands.getoutput
+subprocess module - https://docs.python.org/library/subprocess.html#subprocess-replacements
+os.system(cmd)
+
+
+Exceptions
+https://docs.python.org/tutorial/errors
+try:
+  …
+except IOError:
+  …
+  sys.stderr.write('problem reading:' + filename
+  …
+
+
+HTTP --urllib and urlparse
+urllib.urlopen(url)
+urllib.urlretrieve(url, filename)
+urlparse.urljoin(baseurl, url)
+
+In Python 3.x urllib and urllib2 are merged into urllib.request, urlparse becomes urllib.parse
+
+http://www.youtube.com/watch?v=uKZ8GBKmeDM
+import os
+	• os.listdir
+	• os.path.exists
+	• os.path.abspath
+
+import commands
+	• commands.getstatusoutput
+
+
+
+http://www.youtube.com/watch?v=Nn2KQmVF5Og
+Python when it loads a *.py file (module), reads it from top-down
+
+https://developers.google.com/edu/python/exercises/copy-special
+
+https://developers.google.com/edu/python/exercises/log-puzzle
+To find if a substring exists (much like the ability to slice)
+a = "hello world"
+if "hello" in a: # alternative to a.find("hello") which returns an index
+  print "Found it"
+
+Use the regular expression '(\S+)' when dealing with urls
+
+When asked to find duplicates, a Dict works well, where the key if file/url and the value is the number of duplicates count
+
+Alternative to using the open(filename, mode)
+import urllib
+file(filename, mode)
+
+
+endif::[]
+// end::python[]

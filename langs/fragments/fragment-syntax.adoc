@@ -1,0 +1,35 @@
+// tag::javascript[]
+ifdef::javascript,showall[]
+
+TBD
+
+endif::[]
+// end::javascript[]
+
+// tag::python[]
+ifdef::python,showall[]
+
+Python is...
+
+* Dynamic
+* Interpreted (bytecode-compiled) language. Thus no compile-time type checking
+* No type declarations of variables, parameters, functions
+* Case Sensitive
+* No semicolons or curly braces, everything uses indentations
+
+"+" and "*" can be referred as overload operators because then mean different things to strings and numbers, i.e.
+"-" * 10 = "----------"
+2 * 5 = 10
+
+```
+def myFunc(a, b):
+    """
+    This is a docstring
+    """
+    if a:
+        result = a
+    return result
+```
+
+endif::[]
+// end::python[]

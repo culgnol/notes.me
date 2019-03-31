@@ -1,0 +1,33 @@
+// tag::javascript[]
+ifdef::javascript,showall[]
+
+TBD
+
+endif::[]
+// end::javascript[]
+
+// tag::python[]
+ifdef::python,showall[]
+
+=== Files
+
+# Echo the contents of a file
+f = open('foo.txt', 'rU')
+for line in f:   ## iterates over the lines of the file
+print line,    ## trailing , so print does not add an end-of-line char
+               ## since 'line' already includes the end-of line.
+f.close()
+
+Performance tip:
+	• Reading one line at a time like example above, not all the file needs to fit in memory at one time
+	• "f.readlines()" reads the whole file into memory, returning contents as a list of lines
+	• "f.read()" reads the whole file into a single string, and searched with regular expressions
+
+Use "f.write(string)" for writing to file (optionally in Python 3.x, print(string, file=f))
+
+Files Unicode
+"import codecs"
+
+
+endif::[]
+// end::python[]

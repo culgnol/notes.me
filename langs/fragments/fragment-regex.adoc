@@ -1,0 +1,68 @@
+// tag::javascript[]
+ifdef::javascript,showall[]
+
+TBD
+
+endif::[]
+// end::javascript[]
+
+// tag::python[]
+ifdef::python,showall[]
+
+=== Regex
+
+Python "re" module provide regular expression support
+
+match  = re.search(pat, str) # finds first leftmost match
+
+match = re.findall(pat, str) # returns a list of all found matches
+
+"re.search" and "re.findall" returns a Match object
+if no match is found, it returns "None"
+
+Basic examples:
+	• Repetition
+		+ -- 1 or more occurrences of the pattern to its left, e.g. 'i+' = one or more i's
+		* -- 0 or more occurrences of the pattern to its left
+		? -- match 0 or 1 occurrences of the pattern to its left
+	• Emails
+		  match = re.search(r'[\w.-]+@[\w.-]+', str)
+		  if match:
+		    print match.group()  ## 'alice-b@google.com'
+	• Group Extraction
+		  str = 'purple alice-b@google.com monkey dishwasher'
+		  match = re.search(r'([\w.-]+)@([\w.-]+)', str)
+		  if match:
+		    print match.group()   ## 'alice-b@google.com' (the whole match)
+		    print match.group(1)  ## 'alice-b' (the username, group 1)
+		    print match.group(2)  ## 'google.com' (the host, group 2)
+		
+
+Options
+
+Greedy vs. Non-Greedy
+i.e. '<b>foo</b> and <i>so on</i>'
+<.*> # (greedy) yields '<b>foo</b> and <i>so on</i>'
+<.*?> # (non-greedy) yields '<b>', then '</b>'
+
+Substitution
+re.sub(pat, replacment, str) # returns new string with all replacements
+
+  str = 'purple alice@google.com, blah monkey bob@abc.com blah dishwasher'
+  ## re.sub(pat, replacement, str) -- returns new string with all replacements,
+  ## \1 is group(1), \2 group(2) in the replacement
+  print re.sub(r'([\w\.-]+)@([\w\.-]+)', r'\1@yo-yo-dyne.com', str)
+  ## purple alice@yo-yo-dyne.com, blah monkey bob@yo-yo-dyne.com blah dishwasher
+
+```
+. (dot) any char
+\w word char
+\d digit
+\s whitespace (tab, newline)
+
+"blah blah :kitting12&a=123&yata blah blah"
+pattern => 'r:\S+' # returns :kitting12&a=123&yata
+```
+
+endif::[]
+// end::python[]

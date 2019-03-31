@@ -8,10 +8,17 @@ toc::[]
 == Main
 include::{fragmentsdir}/fragment-homepage.adoc[]
 
+== Syntax
+include::{fragmentsdir}/fragment-syntax.adoc[]
+
 == Variables
 
-== Arrays
-include::{fragmentsdir}/fragment-arrays.adoc[]
+== Strings
+include::{fragmentsdir}/fragment-strings.adoc[]
+
+
+== Collections
+include::{fragmentsdir}/fragment-collections.adoc[]
 
 == Classes
 
@@ -25,6 +32,8 @@ include::{fragmentsdir}/fragment-modules.adoc[]
 == Community
 include::{fragmentsdir}/fragment-community.adoc[]
 
+== Tutorials
+include::{fragmentsdir}/fragment-tutorials.adoc[]
 
 ---
 

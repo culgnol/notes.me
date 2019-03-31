@@ -1,0 +1,32 @@
+// tag::javascript[]
+ifdef::javascript,showall[]
+
+TBD
+
+endif::[]
+// end::javascript[]
+
+// tag::csharp[]
+ifdef::csharp,showall[]
+
+tbd
+
+endif::[]
+// end::csharp[]
+
+// tag::python[]
+ifdef::python,showall[]
+
+Python tutorials completed
+
+|===
+| Published | Link | Notes
+
+| March 9, 2016
+| https://developers.google.com/edu/python/
+| Quick beginner intro to Python
+
+|===
+
+endif::[]
+// end::python[]
