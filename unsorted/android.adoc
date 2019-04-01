@@ -1,0 +1,18 @@
+= Android
+:toc:
+
+== Android & Java
+
+https://www.udacity.com/course/new-android-fundamentals--ud851
+
+== Developing in Kotlin
+
+https://www.udacity.com/course/developing-android-apps-with-kotlin--ud9012
+
+== Tools
+
+=== ADB (Android Debugging Bridge){blank}footnote:[https://developer.android.com/studio/command-line/adb]
+
+https://stackoverflow.com/questions/17901692/set-up-adb-on-mac-os-x
+
+=== Factory Images{blank}footnote:[https://developers.google.com/android/images]

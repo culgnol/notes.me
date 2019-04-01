@@ -1,8 +1,30 @@
 = Web Basics
 :toc:
+:outfilesuffix: .adoc
 
-== HTML
+== HTML (Provides the Structure of a Site)
 
-== CSS
+https://www.codecademy.com/learn/learn-html
 
-== Javascript
+https://classroom.udacity.com/courses/ud001
+
+https://scrimba.com/g/ghtml
+
+== CSS (Controls a Sites Presentation)
+
+https://www.codecademy.com/learn/learn-css
+
+CSS (or Cascading Style Sheets)
+
+=== CSS Examples
+
+https://www.youtube.com/watch?v=bjUoQbSJDJs
+
+
+== Javascript (Controls how a Site Behaves)
+
+https://www.codecademy.com/learn/introduction-to-javascript
+
+https://classroom.udacity.com/courses/ud898
+
+https://medium.freecodecamp.org/javascript-naming-conventions-dos-and-don-ts-99c0e2fdd78a

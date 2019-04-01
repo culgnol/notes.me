@@ -1,0 +1,15 @@
+
+// tag::python[]
+ifdef::python,showall[]
+=== Conditional and Loop Statements
+
+```
+for item in list:
+    print item
+
+while (total < max_val):
+    total += values[i]
+    i += 2
+```
+endif::[]
+// end::python[]

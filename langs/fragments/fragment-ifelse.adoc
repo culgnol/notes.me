@@ -1,0 +1,24 @@
+
+// tag::python[]
+ifdef::python,showall[]
+=== Conditional and Loop Statements
+
+```
+if cake == "delicious":
+    return "Yes please!"
+elif cake == "okay":
+    return "I'll have a small piece."
+else:
+    return "No, thank you."
+```
+
+```
+for item in list:
+    print item
+
+while (total < max_val):
+    total += values[i]
+    i += 2
+```
+endif::[]
+// end::python[]

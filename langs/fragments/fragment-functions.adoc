@@ -1,0 +1,17 @@
+
+// tag::python[]
+ifdef::python,showall[]
+=== Functions
+
+```
+def divide(dividend, divisor):
+    quotient = dividend / divisor
+    remainder = dividend % divisor
+    return quotient, remainder
+
+def calculate_stuff(x, y):
+    (q, r) = divide(x,y)
+    print q, r
+```
+endif::[]
+// end::python[]

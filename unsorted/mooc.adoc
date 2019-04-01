@@ -1,0 +1,28 @@
+= MOOCs
+:toc:
+
+== Awesome Lists
+
+https://github.com/AwesomePresentations/awesome-moocs
+https://github.com/fffaraz/awesome-courses
+https://github.com/FederationCocomo/awesome-moocs
+https://github.com/prakhar1989/awesome-courses
+
+[#code-academy]
+== Code Academy
+
+https://www.codecademy.com/[Code Academy] provides a mix of free and paid courses.
+
+|===
+| Category | Course
+
+| Html
+| https://www.codecademy.com/learn/learn-html
+
+| CSS
+| https://www.codecademy.com/learn/learn-css
+
+| JS
+| https://www.codecademy.com/learn/introduction-to-javascript
+
+|===

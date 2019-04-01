@@ -1,0 +1,52 @@
+= CSS (Cascading Style Sheets)
+:toc:
+:mooc: https://medium.freecodecamp.org/want-to-learn-css-heres-our-free-20-part-course-9fb3dcb0a971
+
+== Where can I place them? Which has higher precedence?
+
+* Inline Styles > Internal Styles > External Styles
+
+Q: Why Inline Styles have higher precedence? A: Because everthing in the HTML is read top-down, as well as in CSS hence "Cascading"
+
+
+Best practice:
+
+* use External Styles for ease of organization and maintenance
+* when applicable always list all External Styles first, then the Internal Styles (as they maybe specific to the page)
+
+[source,html]
+----
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">  <1>
+        <style>  <2>
+            body {
+                background-color: black;
+                color: white;
+            }
+        </style>
+    <body style="background-color: tomato;"> <3>
+        <section>
+            <h1>APP
+...
+----
+<1> External Style
+<2> Internal Style
+<3> Inline Style
+
+== What goes into an External Styles file?
+
+[source]
+----
+section > b, div > b { <1>
+    color: blueviolet; <2>
+}
+
+/* Selectors */
+/* https://www.w3schools.com/cssref/css_selectors.asp */
+
+/* Combinators */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors */
+----
+<1> HTML Element Selector - what to apply the style to
+<2> Property - what style do we want applied

@@ -1,6 +1,8 @@
 = Machine Learning
 :toc:
 
+https://www.udacity.com/course/intro-to-machine-learning--ud120
+
 == Tools
 
 https://medium.freecodecamp.org/essential-libraries-for-machine-learning-in-python-82a9ada57aeb
