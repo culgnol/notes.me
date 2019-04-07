@@ -1,0 +1,20 @@
+= Unix
+
+== Debian
+
+https://www.debian.org/
+
+Install Debian Testing (xfce) the right way
+* https://wiki.debian.org/Xfce#Versions
+* https://unix.stackexchange.com/questions/160019/dpkg-cannot-find-ldconfig-start-stop-daemon-in-the-path-variable
+
+Solution 2: use the root account directly
+Don't use sudo, just switch to root to run your commands. Run one of the following commands to do so:
+```
+$ sudo -i
+$ su 
+Once you are logged in as root, just run your apt-get commands again:
+# apt-get ...
+You might have to set root's PATH first though. Edit /root/.bashrc (with root privileges of course), and add the following line:
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+```

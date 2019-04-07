@@ -16,4 +16,7 @@ image:https://img.shields.io/github/last-commit/qiao/pathfinding.js.svg[GitHub l
 
 a| https://www.youtube.com/watch?v=FG_l1oacWoQ | Water droplets create amazing human-like animations in this Gatorade​ ad
 
+a| Plotter | https://medium.com/@madebythose/woodpecker-is-born-7246ef89a700#.tbjvf56t6
+https://www.kickstarter.com/projects/joto/joto-the-first-connected-display-that-draws-with-a/description
+
 |===
