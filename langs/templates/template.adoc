@@ -26,6 +26,7 @@ include::{fragmentsdir}/fragment-collections.adoc[]
 include::{fragmentsdir}/fragment-modules.adoc[]
 
 == Conditional & Loop Statments
+include::{fragmentsdir}/fragment-loops.adoc[]
 
 == Async
 

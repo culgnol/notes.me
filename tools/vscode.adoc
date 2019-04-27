@@ -6,6 +6,41 @@ toc::[]
 
 == Extensions
 
+Export/Importing Extensions (The Manual Way)
+
+1. Install `code` command line footnote:[https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line]
+2. Run the following
+```
+// Unix
+code --list-extensions | xargs -L 1 echo code --install-extension
+
+// Windows
+code --list-extensions | % { "code --install-extension $_" }
+```
+3. Execute the output, i.e.
+```
+code --install-extension Angular.ng-template
+code --install-extension DSKWRK.vscode-generate-getter-setter
+```
+https://stackoverflow.com/questions/35773299/how-can-you-export-vs-code-extension-list
+
+Or see https://github.com/shanalikhan/code-settings-sync[Settings-Sync Extension]
+
+.Extensions
+|===
+| Extension | Marketplace
+
+a| Markdown
+a| https://marketplace.visualstudio.com/items?itemName=goessner.mdmath
+
+a| AsciiDoc
+a| https://marketplace.visualstudio.com/items?itemName=joaompinto.asciidoctor-vscode 
+
+a| Settings Sync
+a| https://github.com/shanalikhan/code-settings-sync
+
+|===
+
 == Debugging
 
 === Debugging Node.js in Docker

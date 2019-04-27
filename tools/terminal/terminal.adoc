@@ -22,6 +22,13 @@ toc::[]
 == Customizing
 
 https://medium.com/the-code-review/make-your-terminal-more-colourful-and-productive-with-iterm2-and-zsh-11b91607b98c
+https://medium.com/@Clovis_app/configuration-of-a-beautiful-efficient-terminal-and-prompt-on-osx-in-7-minutes-827c29391961
+https://medium.freecodecamp.org/how-you-can-style-your-terminal-like-medium-freecodecamp-or-any-way-you-want-f499234d48bc
+https://medium.com/the-code-review/make-your-terminal-more-colourful-and-productive-with-iterm2-and-zsh-11b91607b98c
+https://medium.com/the-code-review/back-to-bash-remove-zsh-and-terminal-themes-on-a-mac-step-by-step-f89f69d2ec73
+
+https://medium.freecodecamp.org/jazz-up-your-bash-terminal-a-step-by-step-guide-with-pictures-80267554cb22
+
 
 == Find, Replace, Update
 
@@ -29,6 +36,24 @@ https://medium.com/the-code-review/make-your-terminal-more-colourful-and-product
 ```
 find / -type f -name "*.jdk"
 ```
+
+.More `find`
+|===
+| find | Command
+
+a| asdf
+a|
+----
+find . -type f -name 'GetFlowcellChartRequest_ClusterCount.json' -print0 \| xargs --null -I{} mv {} GetFlowcellChartRequest_ClusterCountRaw.json 
+----
+
+a| asdf
+a| 
+----
+find . -type f -name 'GetFlowcellChartRequest_ClusterCount.json' -print0 \| xargs --null -I{} mv {} GetFlowcellChartRequest_ClusterCountRaw.json 
+----
+
+|===
 
 `grep` - search for specific terms in a file
 ```
@@ -51,9 +76,49 @@ $ sed -i 's/cat/dog/' file.txt
 # this will replace any occurrence of the characters 'cat' by 'dog'
 ```
 
+`xargs` - the glue commonly used to pipe the output from  `find` and `grep` to execute a command n-times per input
+
 == Shells
 
+https://terminalsare.sexy
+
 bash
+bash script example
+[source]
+----
+#!/bin/bash 
+
+usage()
+{
+    echo "Pass the following parameters: " 
+    echo "-t tag used for docker" 
+    echo "-p test project path relative to the dotnetcore folder"
+    exit 1 
+} 
+
+while getopts "t:p:" opt; do 
+    case $opt in 
+        t)
+            tag=${OPTARG} 
+            ;; 
+        p)
+            projectFolder=${OPTARG} 
+            ;;
+        \?)
+            echo "Invalid option: -$OPTARG" >&2 
+            usage 
+            ;; 
+        esac 
+done
+
+if [ -z $tag ] || [ -z $projectFolder ] 
+then 
+    usage 
+fi 
+
+docker build --rm -t $tag --build-arg project_folder=$projectFolder -f build/docker/Dockerfile . 
+----
+
 zsh
 
 powershell

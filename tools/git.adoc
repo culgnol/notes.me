@@ -1,8 +1,6 @@
 = Git
 :toc: 
 
-toc::[] 
-
 == Squashing Commits 
 
 https://stackoverflow.com/questions/25356810/git-how-to-squash-all-commits-on-branch[Option 1: Resetting Index to Master] 
@@ -36,3 +34,17 @@ cd [main repo root]
 git status 
 git add [path to added submodule in main repo] 
 ---- 
+
+== Github Pages
+
+=== Configuring a publishing source for GitHub Pages 
+
+In the repo, go to Settings>Github Pages section 
+
+=== For Enterprise 
+
+Url structure is `http://[your github domain]/pages/[username]/[repo]/` 
+
+Also, you'll need to create a branch named "gh-pages" (by default) 
+
+https://jarrodoverson.com/blog/using-github-pages-on-github-enterprise/ 
