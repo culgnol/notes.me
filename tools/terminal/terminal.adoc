@@ -17,6 +17,11 @@ toc::[]
 |`date +%s`
 |https://stackoverflow.com/questions/1204669/how-can-i-generate-unix-timestamps
 
+|Clipboard Content
+|`pbpaste`
+|http://osxdaily.com/2009/12/09/access-the-clipboard-from-the-command-line/
+https://askubuntu.com/questions/382767/how-to-pipe-dump-clipboard-contents-to-a-file
+
 |===
 
 == Customizing
