@@ -1,0 +1,143 @@
+= Terraform
+:toc:
+
+== Docs
+
+https://www.terraform.io/docs/cli-index.html
+
+
+== Providers
+
+.AWS
+* https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=categories%23alwaysfree&awsm.page-all-free-tier=1&awsf.Free%20Tier%20Categories=productcategories%23compute
+
+
+== Anatomy
+
+=== Blocks
+
+https://www.terraform.io/docs/providers/index.html[`provider`] - Configuration for the named provider; responsible for creating and managing resources.
+
+
+---
+
+`resource` - Defines resource that exists within infrastructure; physical ie. EC2, or logical i.e. Heroku application
+
+* https://www.terraform.io/docs/provisioners/index.html[`provisioner`] use this to do initial setup stuff
+
+
+---
+
+`output`
+
+
+---
+
+`variable`
+
+
+---
+
+`data`
+`template = "${file("${path.module}/cloud-config.yml")}"`
+
+
+
+=== Implicit and Explicit Dependencies
+
+Implicit
+```
+resource "aws_eip" "ip" {
+  instance = "${aws_instance.example.id}"
+}
+```
+
+Explicit
+```
+resource "aws_s3_bucket" "example" {
+  bucket = "terraform-getting-started-guide"
+  acl    = "private"
+}
+
+# Change the aws_instance we declared earlier to now include "depends_on"
+resource "aws_instance" "example" {
+  ami           = "ami-2757f631"
+  instance_type = "t2.micro"
+
+  # Tells Terraform that this EC2 instance must be created only after the
+  # S3 bucket has been created.
+  depends_on = ["aws_s3_bucket.example"]
+}
+```
+
+== Project Structure
+
+By default, Terraform loads all *.tf files in the initializing directory unless otherwise specified.
+
+=== .gitignore
+
+```
+# Compiled files
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+
+# logs
+*.log
+
+# Directories
+.terraform/
+.vagrant/
+
+# SSH Keys
+*.pem
+
+# Backup files
+*.bak
+
+# Ignored Terraform files
+*gitignore*.tf
+```
+
+== Terraform CLI
+
+=== Init
+```
+terraform init \
+    -backend-config dir_to_file_conf
+    -reconfigure \
+    -upgrade \
+    dir_to_tf
+```
+
+=== Plan
+```
+terraform plan \
+    -var-file dir_to_file_tfvars
+    -out plan.out \
+    dir_to_tf
+```
+
+=== Apply
+```
+terraform apply \
+    -state-out dir_for_output_state_file \
+    dir_to_file_plan-out
+```
+
+=== Destroy
+```
+terraform destroy \
+    -var-file dir_to_file_tfvars \
+    -state dir_to_state_file \
+    dir_to_tf
+```
+
+Show
+```
+terraform plan \
+    -backend-config dir_to_config
+    -reconfigure \
+    -upgrade \
+    dir_to_tf
+```
