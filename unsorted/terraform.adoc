@@ -23,7 +23,7 @@ https://www.terraform.io/docs/providers/index.html[`provider`] - Configuration f
 
 `resource` - Defines resource that exists within infrastructure; physical ie. EC2, or logical i.e. Heroku application
 
-* https://www.terraform.io/docs/provisioners/index.html[`provisioner`] use this to do initial setup stuff
+* https://www.terraform.io/docs/provisioners/index.html[`provisioner`] use this to run stuff like shell scripts or triggers. By default executes during creation-time, but can be triggered during https://www.terraform.io/docs/provisioners/#destroy-time-provisioners[destroy-time].
 
 
 ---
