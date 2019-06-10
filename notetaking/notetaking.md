@@ -21,6 +21,12 @@ Most notable feature I like:
 
 Example of what it looks like [previewed](https://gist.github.com/dcode/) in Github
 
+### [Precis](https://github.com/culgnol/precis)
+
+A minimal note taking app build over Github Pages
+
+See [Setup](https://github.com/abhin4v/precis/blob/master/setup.markdown) docs
+
 ## Diagramming
 
 https://mermaidjs.github.io/
