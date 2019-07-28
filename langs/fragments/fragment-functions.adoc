@@ -1,7 +1,7 @@
 
 // tag::python[]
 ifdef::python,showall[]
-=== Functions
+=== Python Functions
 
 ```
 def divide(dividend, divisor):
@@ -15,3 +15,13 @@ def calculate_stuff(x, y):
 ```
 endif::[]
 // end::python[]
+
+// tag::javascript[]
+ifdef::javascript,showall[]
+=== Javascript Functions
+
+TBD
+
+
+endif::[]
+// end::javascript[]

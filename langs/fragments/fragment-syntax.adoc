@@ -1,13 +1,19 @@
 // tag::javascript[]
 ifdef::javascript,showall[]
 
-TBD
+=== Javascript Syntax
+
+Javascript is...
+
+* Interpreted, just-in-time compiled
 
 endif::[]
 // end::javascript[]
 
 // tag::python[]
 ifdef::python,showall[]
+
+=== Python Syntax
 
 Python is...
 
