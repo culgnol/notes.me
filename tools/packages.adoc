@@ -1,0 +1,12 @@
+= Packages
+:toc:
+:toc-placement!:
+
+toc::[]
+
+Tools (i.e. for the terminal, vscode, etc.) that seem interesting or useful to me.
+
+General links can be searched via: https://pinboard.in/u:culgnol/public/, the more detailed "how-to" stuff is mentioned below.
+
+.Homebrew
+* tbd

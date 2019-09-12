@@ -42,3 +42,12 @@ https://www.google.com/search?ei=jc6fXNEXkbr6BOS2kZgF&q=golang+package+manager&o
 
 dep
 glide
+
+== JENV
+
+.Java environment Manager
+* http://www.jenv.be/
+* https://github.com/jenv/jenv
+
+.Issues
+* https://github.com/jenv/jenv/issues/44
