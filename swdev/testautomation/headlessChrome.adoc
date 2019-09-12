@@ -1,0 +1,113 @@
+= Basic Headless Chrome Setup
+:toc:
+
+Orignal Google announcement:
+
+https://developers.google.com/web/updates/2017/04/headless-chrome#faq
+
+```
+// Assuming Chrome browser installed (MAC)
+// From command line
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome”
+chrome \
+  --headless \                   # Runs Chrome in headless mode.
+  --disable-gpu \                # Temporarily needed if running on Windows.
+  --no-sandbox \                 # Needed if no user specified in Docker container (i.e. add as capabilities chromeOptions in Selenium)
+  --remote-debugging-port=9222 \
+  https://www.chromestatus.com   # URL to open. Defaults to about:blank.
+```
+
+== Resources
+
+=== Debian
+https://www.debian.org/releases/
+
+* Debian 10 ("buster") — current stable release
+* Debian 9 ("stretch") — oldstable release
+* Debian 8 ("jessie") — oldoldstable release
+
+=== Nodejs
+https://nodejs.org/en/about/releases/
+
+* v8 EOL: 2019-12-31
+* v10 EOL: 2021-04-01
+* v12 EOL: 2022-04-01
+
+https://hub.docker.com/_/node
+
+
+== Dockerized Chrome Setup
+
+Debian specific for now b/c of the base images
+
+=== Basic Setup
+
+[source,dockerfile]
+----
+FROM node:10-buster-slim # <1>
+
+# Install utilities
+RUN apt-get update --fix-missing && apt-get -y upgrade
+RUN apt-get install -y sudo zip && \
+
+# OPTIONAL UTIL: Install dumb-init (Very handy for easier signal handling of SIGINT/SIGTERM/SIGKILL etc.) # <4>
+# ADD https://github.com/Yelp/dumb-init/releases/download/v1.2.0/dumb-init_1.2.0_amd64 /usr/local/bin/dumb-init
+# RUN chmod +x /usr/local/bin/dumb-init
+
+# OPTION #1: Version specific installation
+# ENV CHROME_PACKAGE="google-chrome-stable_77.0.3865.75-1_amd64.deb" #<2>
+# RUN wget https://github.com/webnicer/chrome-downloads/raw/master/x64.deb/${CHROME_PACKAGE} && \
+#     dpkg --unpack ${CHROME_PACKAGE} && \
+#     apt-get install -f -y && \
+#     apt-get clean && \
+#     rm -rf /var/lib/apt/lists/* \
+#     rm ${CHROME_PACKAGE}
+
+# OPTION #2: Get the latest
+# RUN \
+#   wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - && \
+#   echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google.list && \
+#   apt-get update && \
+#   apt-get install -y google-chrome-stable && \
+#   rm -rf /var/lib/apt/lists/*
+
+# OPTION #3: Install latest chrome dev package. # <3>
+# RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
+#     && sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' \
+#     && apt-get update \
+#     && apt-get install -y google-chrome-unstable --no-install-recommends \
+#     && rm -rf /var/lib/apt/lists/* \
+#     && rm -rf /src/*.deb
+
+# Add a chrome user and setup home dir. # <3>
+RUN groupadd --system chrome && \
+    useradd --system --create-home --gid chrome --groups audio,video chrome && \
+    mkdir --parents /home/chrome/reports && \
+    chown --recursive chrome:chrome /home/chrome
+
+USER chrome
+
+#VOLUME /home/chrome/reports
+#WORKDIR /home/chrome/reports
+
+# versions of local tools #
+RUN echo  " node version:    $(node -v) \n" \
+  "npm version:     $(npm -v) \n" \
+  "yarn version:    $(yarn -v) \n" \
+  "debian version:  $(cat /etc/debian_version) \n" \
+  "Chrome version:  $(google-chrome --version) \n" \
+  "user:            $(whoami) \n"
+----
+<1> Additional setup required if you need more packages: https://stackoverflow.com/a/55797660
+<2> See for available Chrome versions: https://github.com/webnicer/chrome-downloads
+<3> Note: `--no-sandbox` is not needed if you properly setup a user in the container: https://github.com/GoogleChromeLabs/lighthousebot/blob/master/builder/Dockerfile#L35-L40
+<4> See: https://github.com/GoogleChromeLabs/lighthousebot/blob/master/builder/Dockerfile#L35-L40[Example #1], https://github.com/eirslett/chrome-karma-docker/blob/60ad7fda87d07a33a1a7297a5cae0ec251adc806/docker/dev/Dockerfile#L3[Example #2]
+
+=== ...with Protractor
+
+[source,dockerfile]
+----
+# ... continued from basic setup
+
+RUN npm install -g protractor@4.0.14 
+----
