@@ -1,0 +1,67 @@
+= UI Automation
+:toc:
+
+== Concepts
+
+Visual page objects is represented by the HTML on the web page. To interact with the elements programatically (i.e with javascript), you use the DOM Tree representation.
+
+https://developers.google.com/web/tools/chrome-devtools/dom#appendix
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
+
+=== DOM Elements
+
+To select elements, a selector is used to filter the elements from the DOM Tree
+CSS Selector
+XPath Selector
+
+From DevTools
+`$()` Return first matching element
+`$$()` Return array of matching elements
+`$x()` Return array of elements matching XPath
+
+https://developers.google.com/web/tools/chrome-devtools/console/expressions#select_elements
+
+==== CSS Selector
+
+.Simple Selectors
+| Selector | Description |
+|:----|:----|
+| .class | select all elements by class |
+| #id | select all elements by id |
+| * | select all elements |
+| element | select all elements by tag |
+
+Examples searches from browser console
+- Find by tag: $('button')
+- Find the <li>'s in .list: $('.list > li')
+- Find the first li descendent within a ul: $('ul li:first')
+- Find element with given attribute: $('[data-test-id="test-example"]')
+- Find by tag and text: $('button:contains("Select Datasets")')
+- Find by parent with attribute: $('[search-box-placeholder-text="Search biosamples ..."] button:contains("Search biosample")')
+
+
+https://www.w3schools.com/css/css_selectors.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#Selector_Types
+
+Page Object Pattern
+
+== Frameworks
+
+Find
+Act
+Assert
+
+=== Selenium
+
+Selenium itself
+
+Selenium powered frameworks:
+
+- Watir
+- <<Protractor>>
+
+==== Protractor
+
+=== https://www.cypress.io[Cypress]
+
+
